@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">XyloPhone</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
 </resources>

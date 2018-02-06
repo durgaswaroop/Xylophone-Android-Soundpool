@@ -1,76 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
-        style="@style/KeyStyle"
         android:id="@+id/c_key"
-        android:background="@color/red"
+        style="@style/KeyStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:alpha="@android:integer/config_longAnimTime"
+        android:background="@color/red" />
 
     <Button
-        style="@style/KeyStyle"
         android:id="@+id/d_key"
-        android:background="@color/orange"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:background="@color/orange" />
 
     <Button
-        style="@style/KeyStyle"
         android:id="@+id/e_key"
-        android:background="@color/yellow"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:background="@color/yellow" />
 
     <Button
-        style="@style/KeyStyle"
         android:id="@+id/f_key"
-        android:background="@color/green"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:background="@color/green" />
 
     <Button
-        style="@style/KeyStyle"
         android:id="@+id/g_key"
-        android:background="@color/turquoise"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:background="@color/turquoise" />
 
 
     <Button
-        style="@style/KeyStyle"
         android:id="@+id/a_key"
-        android:background="@color/blue"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:background="@color/blue" />
 
     <Button
-        style="@style/KeyStyle"
         android:id="@+id/b_key"
-        android:background="@color/purple"
+        style="@style/KeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:background="@color/purple" />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_record_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Record"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:drawable/ic_media_play"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
